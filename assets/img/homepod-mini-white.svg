@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 230">
+  <!-- HomePod mini (white), stylised vector illustration -->
+  <defs>
+    <pattern id="knit" width="5.2" height="5.2" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+      <rect width="5.2" height="5.2" fill="#c3c3ca"/>
+      <path d="M0 2.6H5.2M2.6 0V5.2" stroke="#f6f6f8" stroke-width="3.5"/>
+    </pattern>
+    <radialGradient id="shine" cx="0.36" cy="0.3" r="0.55">
+      <stop offset="0" stop-color="#fff" stop-opacity="0.55"/>
+      <stop offset="1" stop-color="#fff" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="edge" cx="0.5" cy="0.48" r="0.56">
+      <stop offset="0.62" stop-color="#000" stop-opacity="0"/>
+      <stop offset="1" stop-color="#000" stop-opacity="0.22"/>
+    </radialGradient>
+    <linearGradient id="siri" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#ff8fc2"/>
+      <stop offset="0.3" stop-color="#b48cff"/>
+      <stop offset="0.55" stop-color="#ffe9f4"/>
+      <stop offset="0.75" stop-color="#6ec6ff"/>
+      <stop offset="1" stop-color="#5ee6d2"/>
+    </linearGradient>
+    <radialGradient id="siriWarm" cx="0.62" cy="0.6" r="0.5">
+      <stop offset="0" stop-color="#ffb46b" stop-opacity="0.85"/>
+      <stop offset="1" stop-color="#ffb46b" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="soft" x="-20%" y="-60%" width="140%" height="220%"><feGaussianBlur stdDeviation="2.2"/></filter>
+    <filter id="ground" x="-40%" y="-200%" width="180%" height="500%"><feGaussianBlur stdDeviation="7"/></filter>
+  </defs>
+  <ellipse cx="120" cy="219" rx="70" ry="7" fill="#000" opacity="0.2" filter="url(#ground)"/>
+  <path d="M61 28 A106 106 0 0 0 80 214 L160 214 A106 106 0 0 0 179 28 Z" fill="url(#knit)"/>
+  <path d="M61 28 A106 106 0 0 0 80 214 L160 214 A106 106 0 0 0 179 28 Z" fill="url(#edge)"/>
+  <path d="M61 28 A106 106 0 0 0 80 214 L160 214 A106 106 0 0 0 179 28 Z" fill="url(#shine)"/>
+  <ellipse cx="120" cy="28" rx="59" ry="9.5" fill="#dedee3"/>
+  <ellipse cx="120" cy="28" rx="59" ry="9.5" fill="url(#knit)" opacity="0.55"/>
+  <ellipse cx="120" cy="28.6" rx="51" ry="7" fill="#1a1a1e"/>
+  <ellipse cx="120" cy="28.6" rx="47" ry="5.6" fill="url(#siri)" filter="url(#soft)"/>
+  <ellipse cx="120" cy="28.6" rx="47" ry="5.6" fill="url(#siriWarm)" filter="url(#soft)"/>
+  <path d="M93 28.4h8M139 28.4h8M143 26v4.8" stroke="#fff" stroke-opacity="0.75" stroke-width="0.9" stroke-linecap="round"/>
+</svg>

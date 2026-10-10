@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <!-- HomePod mini (midnight) seen from above, stylised -->
+  <defs>
+    <pattern id="knit" width="5.0" height="5.0" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+      <rect width="5.0" height="5.0" fill="#141518"/>
+      <path d="M0 2.5H5.0M2.5 0V5.0" stroke="#43444a" stroke-width="3.4"/>
+    </pattern>
+    <radialGradient id="rimShade" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0.7" stop-color="#000" stop-opacity="0"/>
+      <stop offset="1" stop-color="#000" stop-opacity="0.45"/>
+    </radialGradient>
+    <radialGradient id="pink" cx="0.5" cy="0.5" r="0.5"><stop offset="0" stop-color="#ff8fc2"/><stop offset="1" stop-color="#ff8fc2" stop-opacity="0"/></radialGradient>
+    <radialGradient id="blue" cx="0.5" cy="0.5" r="0.5"><stop offset="0" stop-color="#6ec6ff"/><stop offset="1" stop-color="#6ec6ff" stop-opacity="0"/></radialGradient>
+    <radialGradient id="teal" cx="0.5" cy="0.5" r="0.5"><stop offset="0" stop-color="#5ee6d2"/><stop offset="1" stop-color="#5ee6d2" stop-opacity="0"/></radialGradient>
+    <radialGradient id="warm" cx="0.5" cy="0.5" r="0.5"><stop offset="0" stop-color="#ffb46b"/><stop offset="1" stop-color="#ffb46b" stop-opacity="0"/></radialGradient>
+    <radialGradient id="core" cx="0.5" cy="0.5" r="0.5"><stop offset="0" stop-color="#fff"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></radialGradient>
+    <filter id="ground" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="6"/></filter>
+    <clipPath id="glass"><circle cx="100" cy="100" r="50"/></clipPath>
+  </defs>
+  <circle cx="102" cy="106" r="86" fill="#000" opacity="0.38" filter="url(#ground)"/>
+  <circle cx="100" cy="100" r="88" fill="url(#knit)"/>
+  <circle cx="100" cy="100" r="88" fill="url(#rimShade)"/>
+  <circle cx="100" cy="100" r="56" fill="#2a2b30"/>
+  <circle cx="100" cy="100" r="50" fill="#1a1a1e"/>
+  <g clip-path="url(#glass)">
+    <circle cx="78" cy="88" r="34" fill="url(#pink)"/>
+    <circle cx="124" cy="86" r="34" fill="url(#blue)"/>
+    <circle cx="112" cy="124" r="30" fill="url(#teal)"/>
+    <circle cx="84" cy="122" r="28" fill="url(#warm)"/>
+    <circle cx="100" cy="100" r="22" fill="url(#core)" opacity="0.8"/>
+  </g>
+  <path d="M68 100h9M123 100h9M127.5 95.5v9" stroke="#fff" stroke-opacity="0.8" stroke-width="1.6" stroke-linecap="round"/>
+</svg>

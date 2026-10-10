@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="zh-CN" data-lang="zh" data-theme="light"
+      data-title-zh="GeoAtom — 小而专注的软件" data-title-en="GeoAtom — Small, focused software">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>GeoAtom — 小而专注的软件</title>
+<meta name="description" content="GeoAtom 做小而专注的软件。第一个产品 HomePod Cast：把 Windows 的声音同步送到 1、2 或 4 台 HomePod。 GeoAtom builds small, focused software. First product: HomePod Cast.">
+<meta property="og:title" content="GeoAtom">
+<meta property="og:description" content="Small, focused software. First product: HomePod Cast — Windows audio to 1, 2 or 4 HomePods, in sync.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://geoatom.github.io/assets/img/homepod-cast.png">
+<meta name="theme-color" content="#f3f1ec" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#111113" media="(prefers-color-scheme: dark)">
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<script>
+/* Language and theme before first paint: ?lang= / ?theme= in the link, else the saved choice, else the browser's. */
+(function(){var d=document.documentElement,q=location.search,l=(/[?&]lang=(zh|en)/.exec(q)||[])[1],t=(/[?&]theme=(light|dark)/.exec(q)||[])[1];
+try{l=l||localStorage.getItem('ga-lang');t=t||localStorage.getItem('ga-theme')}catch(e){}
+if(l!=='zh'&&l!=='en')l=/^zh/i.test(navigator.language||'')?'zh':'en';d.dataset.lang=l;d.lang=l==='zh'?'zh-CN':'en';
+if(t!=='dark'&&t!=='light')t=window.matchMedia&&matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light';d.dataset.theme=t})();
+</script>
+<link rel="stylesheet" href="assets/site.css">
+</head>
+<body>
+
+<header class="site-head">
+  <div class="wrap">
+    <a class="logo" href="./" aria-label="GeoAtom">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.5" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="3.2" fill="currentColor"/><circle cx="18" cy="6" r="3" fill="currentColor" style="stroke:var(--bg)" stroke-width="1.6"/></svg>
+      GeoAtom
+    </a>
+    <nav class="nav" aria-label="Primary">
+      <a href="#products"><span lang="zh">产品</span><span lang="en">Products</span></a>
+      <a href="#approach"><span lang="zh">理念</span><span lang="en">Approach</span></a>
+      <a href="https://github.com/GeoAtom" rel="noopener">GitHub</a>
+    </nav>
+    <div class="tools">
+      <button class="tool" type="button" data-toggle="lang" aria-label="切换语言 / Switch language"><span class="l-zh">中</span><span class="sep">/</span><span class="l-en">EN</span></button>
+      <button class="tool" type="button" data-toggle="theme" aria-label="切换深浅色 / Toggle light and dark">
+        <svg class="art-light" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+        <svg class="art-dark" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 14.5A8.5 8.5 0 0 1 9.5 4a8.5 8.5 0 1 0 10.5 10.5Z"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="wrap">
+      <div class="hero-copy">
+        <p class="eyebrow">GeoAtom</p>
+        <h1 class="display" lang="zh">小而专注的软件，<br>打开就能用。</h1>
+        <h1 class="display" lang="en">Small, focused software. Open it and it works.</h1>
+        <p class="lede" lang="zh">GeoAtom 做的每一个工具，只解决一个具体的问题。第一个产品 HomePod Cast 已经发布：把 Windows 的声音同步送到 HomePod。</p>
+        <p class="lede" lang="en">Every GeoAtom tool solves one specific problem. Our first product, HomePod Cast, is out: it sends Windows audio to your HomePods, in sync.</p>
+        <div class="actions">
+          <a class="btn ink" href="homepod-cast/">
+            <span lang="zh">了解 HomePod Cast</span><span lang="en">Meet HomePod Cast</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+          <a class="btn line" href="https://github.com/GeoAtom" rel="noopener">
+            <svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8 0c4.42 0 8 3.58 8 8a8.013 8.013 0 0 1-5.45 7.59c-.4.08-.55-.17-.55-.38 0-.27.01-1.13.01-2.2 0-.75-.25-1.23-.54-1.48 1.78-.2 3.65-.88 3.65-3.95 0-.88-.31-1.59-.82-2.15.08-.2.36-1.02-.08-2.12 0 0-.67-.22-2.2.82-.64-.18-1.32-.27-2-.27-.68 0-1.36.09-2 .27-1.53-1.03-2.2-.82-2.2-.82-.44 1.1-.16 1.92-.08 2.12-.51.56-.82 1.28-.82 2.15 0 3.06 1.86 3.75 3.64 3.95-.23.2-.44.55-.51 1.07-.46.21-1.61.55-2.33-.66-.15-.24-.6-.83-1.23-.82-.67.01-.27.38.01.53.34.19.73.9.82 1.13.16.45.68 1.31 2.69.94 0 .67.01 1.3.01 1.49 0 .21-.15.45-.55.38A7.995 7.995 0 0 1 0 8c0-4.42 3.58-8 8-8Z"/></svg>
+            GitHub
+          </a>
+        </div>
+      </div>
+
+      <div class="orbit" role="img" aria-label="GeoAtom — HomePod Cast">
+        <span class="ring r1"></span><span class="ring r2"></span><span class="ring r3"></span>
+        <span class="seat" style="left:4%;top:33.2%"></span>
+        <span class="seat" style="left:22.1%;top:69.5%"></span>
+        <span class="seat" style="left:66.8%;top:96%"></span>
+        <span class="core"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.5" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="3.2" fill="currentColor"/><circle cx="18" cy="6" r="3" fill="currentColor" style="stroke:var(--ink)" stroke-width="1.6"/></svg></span>
+        <span class="pulse"></span>
+        <a class="atom" href="homepod-cast/"><img src="assets/img/homepod-cast.svg" alt=""><span>HomePod Cast</span></a>
+      </div>
+    </div>
+  </section>
+
+  <section id="products" style="padding-top:0">
+    <div class="wrap">
+      <div class="sec-head">
+        <p class="eyebrow"><span lang="zh">产品</span><span lang="en">Products</span></p>
+      </div>
+
+      <article class="product">
+        <div class="product-copy">
+          <div class="product-name"><img src="assets/img/homepod-cast.svg" alt="">HomePod Cast</div>
+          <h3 lang="zh"><span class="nowrap">Windows 也能用</span> <span class="nowrap"><span class="hl">HomePod</span> 了</span></h3>
+          <h3 lang="en">Windows audio, on your <span class="hl">HomePod</span></h3>
+          <p lang="zh">电脑上播放的任何声音——音乐、视频、网页——同步送到 1、2 或 4 台 HomePod。单个 exe，无需安装、账号或驱动。</p>
+          <p lang="en">Anything your PC plays — music, video, the web — streamed to 1, 2 or 4 HomePods, in sync. A single exe: no install, no account, no driver.</p>
+          <div class="chips">
+            <span class="chip">Windows 10 / 11</span>
+            <span class="chip"><span lang="zh">免费开源</span><span lang="en">Free &amp; open source</span></span>
+            <span class="chip">MIT</span>
+          </div>
+          <div class="actions">
+            <a class="btn accent" href="https://github.com/momiji-bit/HomePodCast/releases/latest/download/HomePodCast.exe">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v11M7 11l5 5 5-5M5 20h14"/></svg>
+              <span lang="zh">下载 Windows 版</span><span lang="en">Download for Windows</span>
+            </a>
+            <a class="btn line" href="homepod-cast/"><span lang="zh">了解更多</span><span lang="en">Learn more</span></a>
+          </div>
+        </div>
+        <div class="stage">
+          <div class="demo" data-mode="stereo" data-state="streaming">
+            <div class="demo-win"><div class="demo-slot"></div></div>
+            <div class="pods"></div>
+          </div>
+        </div>
+      </article>
+
+      <div class="next">
+        <span lang="zh"><b>更多产品正在路上。</b> 在 GitHub 上关注 GeoAtom，第一时间看到。</span>
+        <span lang="en"><b>More on the way.</b> Follow GeoAtom on GitHub to see it first.</span>
+        <a href="https://github.com/GeoAtom" rel="noopener">github.com/GeoAtom →</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="approach" style="padding-top:0">
+    <div class="wrap">
+      <div class="sec-head">
+        <p class="eyebrow"><span lang="zh">理念</span><span lang="en">Approach</span></p>
+        <h2 class="title" lang="zh">我们怎么做软件</h2>
+        <h2 class="title" lang="en">How we build</h2>
+      </div>
+      <div class="rules">
+        <div class="rule">
+          <span class="n">01</span>
+          <h3 lang="zh">一个文件，打开就用</h3>
+          <h3 lang="en">One file, ready to run</h3>
+          <p lang="zh">不用安装，不用注册账号，也不用装驱动。</p>
+          <p lang="en">No installer, no account, no driver.</p>
+        </div>
+        <div class="rule">
+          <span class="n">02</span>
+          <h3 lang="zh">开源，可以自己看</h3>
+          <h3 lang="en">Open source, open to inspection</h3>
+          <p lang="zh">代码以 MIT 许可放在 GitHub 上，可以查看、修改、提 issue。</p>
+          <p lang="en">The code is on GitHub under the MIT license: read it, change it, open an issue.</p>
+        </div>
+        <div class="rule">
+          <span class="n">03</span>
+          <h3 lang="zh">做不到的事，先说清楚</h3>
+          <h3 lang="en">Honest about the limits</h3>
+          <p lang="zh">延迟多少、适合什么、不适合什么，都写在明处。</p>
+          <p lang="en">How much latency, what it suits and what it doesn't — stated up front.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-foot">
+  <div class="wrap">
+    <div class="foot-top">
+      <a class="logo" href="./" aria-label="GeoAtom">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.5" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="3.2" fill="currentColor"/><circle cx="18" cy="6" r="3" fill="currentColor" style="stroke:var(--bg)" stroke-width="1.6"/></svg>
+        GeoAtom
+      </a>
+      <a href="homepod-cast/">HomePod Cast</a>
+      <a href="https://github.com/GeoAtom" rel="noopener">GitHub</a>
+      <span style="margin-left:auto">© 2026 GeoAtom</span>
+    </div>
+    <p class="legal" lang="zh">HomePod 和 AirPlay 是 Apple Inc. 的商标，Windows 是 Microsoft Corporation 的商标。GeoAtom 与 Apple、Microsoft 均无关联。</p>
+    <p class="legal" lang="en">HomePod and AirPlay are trademarks of Apple Inc.; Windows is a trademark of Microsoft Corporation. GeoAtom is not affiliated with Apple or Microsoft.</p>
+  </div>
+</footer>
+
+<script src="assets/site.js"></script>
+</body>
+</html>
