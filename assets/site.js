@@ -43,6 +43,12 @@
     onScroll();
   }
 
+  /* Support menu: close it on a click elsewhere, on Escape, and once a link in it is used. */
+  each('details.support', function (d) {
+    document.addEventListener('click', function (e) { if (d.open && (!d.contains(e.target) || e.target.closest('.support-menu a'))) d.open = false; });
+    document.addEventListener('keydown', function (e) { if (e.key === 'Escape' && d.open) { d.open = false; d.querySelector('summary').focus(); } });
+  });
+
   /* Opened straight from disk there is no server to map "folder/" to "folder/index.html". */
   if (location.protocol === 'file:') each('a[href]', function (a) {
     var h = a.getAttribute('href');

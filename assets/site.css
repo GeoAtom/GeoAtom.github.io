@@ -70,7 +70,7 @@ html[data-theme="dark"] .art-light { display: none !important; }
   border-bottom: 1px solid transparent; transition: border-color .2s;
 }
 .site-head.scrolled { border-bottom-color: var(--line); }
-.site-head .wrap { height: 64px; display: flex; align-items: center; gap: 8px; }
+.site-head .wrap { position: relative; height: 64px; display: flex; align-items: center; gap: 8px; }
 .logo { display: inline-flex; align-items: center; gap: 10px; font-weight: 700; font-size: 19px; letter-spacing: -.01em;
         text-decoration: none; margin-right: auto; white-space: nowrap; }
 .logo svg { width: 26px; height: 26px; }
@@ -89,6 +89,27 @@ html[data-theme="dark"] .art-light { display: none !important; }
 .tool svg { width: 16px; height: 16px; }
 .tool .sep { color: var(--faint); font-weight: 400; }
 html[data-lang="zh"] .tool .l-en, html[data-lang="en"] .tool .l-zh { color: var(--muted); font-weight: 400; }
+
+/* Support menu in the header: a <details>, so it opens without script */
+.support { position: relative; }
+.support summary { list-style: none; user-select: none; }
+.support summary::-webkit-details-marker { display: none; }
+.support .heart { fill: var(--spark); }
+.support .chev { width: 12px; height: 12px; color: var(--muted); transition: transform .15s; }
+.support[open] .chev { transform: rotate(180deg); }
+.support[open] summary { background: var(--card); border-color: var(--faint); }
+.support-menu { position: absolute; right: 0; top: calc(100% + 10px); z-index: 30; width: 264px; padding: 8px; border-radius: 18px;
+                background: var(--card); box-shadow: var(--shadow); display: flex; flex-direction: column; gap: 2px; }
+.support-menu a { display: flex; align-items: center; gap: 12px; padding: 10px; border-radius: 12px; text-decoration: none; transition: background .15s; }
+.support-menu a:hover { background: color-mix(in srgb, var(--ink) 6%, transparent); }
+.support-menu b { display: block; font-size: 15px; line-height: 1.3; }
+.support-menu small { display: block; font-size: 13px; line-height: 1.3; color: var(--muted); }
+.support-menu .tile { width: 40px; height: 40px; border-radius: 11px; display: grid; place-items: center; flex: none; }
+.support-menu .afd .tile { background: #946ce6; }
+.support-menu .afd .tile img { width: 26px; }
+.support-menu .bmc .tile { background: #ffdd00; color: #0d0c23; }
+.support-menu .bmc .tile svg { width: 22px; height: 22px; }
+html[data-lang="en"] .support-menu .bmc { order: -1; }   /* each language gets its own platform first */
 
 /* ---------------------------------------------------------------- buttons, chips */
 .btn {
@@ -350,6 +371,9 @@ html[data-theme="dark"] .room image { filter: drop-shadow(0 0 7px rgba(255, 232,
   :root { --gutter: 16px; }
   body { font-size: 16px; }
   .nav { display: none; }
+  /* the button is no longer at the right edge: hang the menu from the header instead, flush with the page gutter */
+  .support { position: static; }
+  .support-menu { right: var(--gutter); top: calc(100% - 4px); width: min(264px, calc(100vw - 2 * var(--gutter))); }
   .product, .stage, .cta-box { border-radius: 28px; }
   .product .stage { border-radius: 0; }
   .layout { grid-template-columns: minmax(0, 1fr); padding: 14px 14px 24px; }
@@ -360,7 +384,7 @@ html[data-theme="dark"] .room image { filter: drop-shadow(0 0 7px rgba(255, 232,
 }
 @media (max-width: 520px) { .demo { --z: 1; } .crumb { display: none; } }
 @media (max-width: 440px) { .demo { --z: .9; } }
-@media (max-width: 400px) { .demo { --z: .82; } }
+@media (max-width: 400px) { .demo { --z: .82; } .support-label { display: none; } .tools { gap: 4px; margin-left: 4px; } }
 @media (max-width: 360px) { .demo { --z: .76; } }
 
 @media (prefers-reduced-motion: reduce) {
