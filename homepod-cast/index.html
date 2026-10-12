@@ -97,7 +97,7 @@ if(t!=='dark'&&t!=='light')t=window.matchMedia&&matchMedia('(prefers-color-schem
               <span lang="zh">查看源码</span><span lang="en">Source</span>
             </a>
           </div>
-          <p class="meta"><span data-release-version>v1.0</span> · <span data-release-size>41 MB</span> · Windows 10 / 11</p>
+          <p class="meta"><span data-release-version>v1.2.0</span> · <span data-release-size>41 MB</span> · Windows 10 / 11</p>
         </div>
       </div>
 
@@ -247,13 +247,23 @@ if(t!=='dark'&&t!=='light')t=window.matchMedia&&matchMedia('(prefers-color-schem
         </div>
         <div class="note">
           <dt><span lang="zh">电脑音箱</span><span lang="en">PC speakers</span></dt>
-          <dd lang="zh">电脑音箱会跟着一起响。想调小请直接调音箱本身：改 Windows 音量的话，串流的音量也会跟着变。</dd>
-          <dd lang="en">They keep playing. Turn them down on the device itself: the Windows volume also changes what is streamed.</dd>
+          <dd lang="zh">串流时电脑音箱自动静音，停止后恢复；不需要的话，在设置里关掉<em>「静音」</em>。Windows 音量仍然会改变串流的音量。</dd>
+          <dd lang="en">Muted while streaming and unmuted when it stops; <em>Mute</em> in Settings turns that off. The Windows volume still changes what is streamed.</dd>
+        </div>
+        <div class="note">
+          <dt><span lang="zh">关闭窗口</span><span lang="en">Close button</span></dt>
+          <dd lang="zh">点 ✕ 只是把窗口收进托盘，串流不会停。点托盘图标恢复窗口，<em>右键 → 退出</em>才是真正关闭。</dd>
+          <dd lang="en">It only hides the window: the app keeps streaming from the notification area. Click the icon to get the window back, <em>right-click → Quit</em> to exit.</dd>
+        </div>
+        <div class="note">
+          <dt><span lang="zh">断线</span><span lang="en">Dropouts</span></dt>
+          <dd lang="zh">掉线的 HomePod 会自动重连，其余音箱照常播放。</dd>
+          <dd lang="en">A HomePod that loses the connection is reconnected on its own while the others keep playing.</dd>
         </div>
         <div class="note">
           <dt><span lang="zh">设置</span><span lang="en">Settings</span></dt>
-          <dd lang="zh">可以选音源设备、缓冲（自动或固定）和界面语言（中文 / English）。</dd>
-          <dd lang="en">Source device, buffer (Auto or fixed) and language (中文 / English).</dd>
+          <dd lang="zh">可以选音源设备、缓冲（自动或固定）和界面语言（中文 / English），还有<em>「自启」</em>：登录 Windows 后自动开始串流。</dd>
+          <dd lang="en">Source device, buffer (Auto or fixed), language (中文 / English) and <em>Startup</em>, which starts streaming when you sign in to Windows.</dd>
         </div>
         <div class="note">
           <dt><span lang="zh">测试环境</span><span lang="en">Tested with</span></dt>
@@ -278,7 +288,7 @@ if(t!=='dark'&&t!=='light')t=window.matchMedia&&matchMedia('(prefers-color-schem
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v11M7 11l5 5 5-5M5 20h14"/></svg>
           <span lang="zh">下载 Windows 版</span><span lang="en">Download for Windows</span>
         </a>
-        <p class="meta"><span data-release-version>v1.0</span> · <span data-release-size>41 MB</span> · Windows 10 / 11 · MIT</p>
+        <p class="meta"><span data-release-version>v1.2.0</span> · <span data-release-size>41 MB</span> · Windows 10 / 11 · MIT</p>
         <div class="links">
           <a href="https://github.com/GeoAtom/HomePodCast/releases" rel="noopener"><span lang="zh">历史版本</span><span lang="en">All releases</span></a>
           <a href="https://github.com/GeoAtom/HomePodCast/issues" rel="noopener"><span lang="zh">反馈问题</span><span lang="en">Report an issue</span></a>

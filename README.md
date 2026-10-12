@@ -31,7 +31,7 @@ Push this folder to a repository named `GeoAtom.github.io` in the GeoAtom organi
 - **Light and dark.** Colours are the tokens at the top of `site.css`; artwork that differs per theme carries
   `art-light` / `art-dark`.
 - **Links.** `?lang=en` or `?lang=zh`, and `?theme=light` or `?theme=dark`, force a language or theme.
-- **Version label.** The download buttons always point at the latest GitHub release; the "v1.0 · 41 MB" text is a
+- **Version label.** The download buttons always point at the latest GitHub release; the "v1.2.0 · 41 MB" text is a
   fallback that `site.js` replaces with the current release when the GitHub API answers.
 
 ## Adding a product
